@@ -2,7 +2,6 @@ package com.zhidiantech.orangeframe.easyhttp.observer;
 
 import android.support.annotation.NonNull;
 
-import com.zhidiantech.orangeframe.BuildConfig;
 import com.zhidiantech.orangeframe.easyhttp.exception.ApiException;
 
 import java.io.IOException;
@@ -16,7 +15,6 @@ import io.reactivex.disposables.Disposable;
 import io.reactivex.functions.Consumer;
 import io.reactivex.functions.Function;
 import io.reactivex.schedulers.Schedulers;
-import retrofit2.HttpException;
 
 /**
  * -----------------------------------------------------------------

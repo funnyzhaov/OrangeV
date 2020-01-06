@@ -28,14 +28,6 @@
         </activity>
         <activity android:name=".frametest.flowsence.singlebs.SampleSingleBsActivity" />
         <activity android:name=".frametest.flowsence.morebs.SampleMoreActivity" />
-        <activity android:name=".othertest.test.TestActivity">
-        </activity>
-
-        <!--bugly配置-->
-        <activity
-            android:name="com.tencent.bugly.beta.ui.BetaActivity"
-            android:configChanges="keyboardHidden|orientation|screenSize|locale"
-            android:theme="@android:style/Theme.Translucent" />
 
         <provider
             android:name="android.support.v4.content.FileProvider"

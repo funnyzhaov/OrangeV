@@ -1,7 +1,7 @@
 package com.zhidiantech.orangesample.frametest.app;
 
-import com.tencent.tinker.loader.app.TinkerApplication;
-import com.tencent.tinker.loader.shareutil.ShareConstants;
+import android.app.Application;
+
 import com.zhidiantech.orangeframe.easyhttp.http.OfHttpUtil;
 import com.zhidiantech.orangeframe.imageloader.GlideImageLoaderStrategy;
 import com.zhidiantech.orangeframe.imageloader.ImageLoader;
@@ -21,14 +21,7 @@ import com.zhidiantech.orangesample.frametest.flowsence.uibs.SampleUIFragment;
  * Changes (from 2019/1/2)
  * -----------------------------------------------------------------
  */
-public class OrangeSampleApp extends TinkerApplication {
-    //bugly默认构造器
-    public OrangeSampleApp(){
-        super(ShareConstants.TINKER_ENABLE_ALL
-                ,"com.zhidiantech.orangesample.frametest.app.OrangeApplicationLike"
-                ,"com.tencent.tinker.loader.TinkerLoader"
-                , false);
-    }
+public class OrangeSampleApp extends Application {
 
     @Override
     public void onCreate() {
