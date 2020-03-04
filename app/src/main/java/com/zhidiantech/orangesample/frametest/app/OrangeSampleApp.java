@@ -3,8 +3,6 @@ package com.zhidiantech.orangesample.frametest.app;
 import android.app.Application;
 
 import com.zhidiantech.orangeframe.easyhttp.http.OfHttpUtil;
-import com.zhidiantech.orangeframe.imageloader.GlideImageLoaderStrategy;
-import com.zhidiantech.orangeframe.imageloader.ImageLoader;
 import com.zhidiantech.orangeframe.support.ui.OrangeFrameActivity;
 import com.zhidiantech.orangeframe.support.progress.ICustomProgress;
 import com.zhidiantech.orangeframe.support.progress.IProgressSetting;
@@ -59,7 +57,5 @@ public class OrangeSampleApp extends Application {
                 .setLog(BuildConfig.DEBUG)
                 .setConnectTimeout(10000);
 
-        //ImageLoader初始化
-        ImageLoader.setLoadImgStrategy(new GlideImageLoaderStrategy());
     }
 }

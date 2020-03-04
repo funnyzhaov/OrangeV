@@ -1,5 +1,4 @@
 apply plugin: 'com.android.library'
-apply plugin: 'com.novoda.bintray-release'
 android {
     compileSdkVersion 28
 
@@ -31,13 +30,5 @@ dependencies {
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
-}
-publish{
-    userOrg = 'zhidian-code'//bintray.com你的用户名
-    groupId = 'com.zhidiantech'//依赖时的包名前缀
-    artifactId = 'oetlbar'//项目名称与maven 下的package一致
-    publishVersion = '1.0.0'//版本号
-    desc = '橙子标题UI组件'//描述
-    website = ''//网站，可不填
 }
 
