@@ -44,7 +44,7 @@ publish{
     userOrg = 'funnyzhaov'//bintray.com你的用户名
     groupId = 'com.funnyzhao'//依赖时的包名前缀
     artifactId = 'oehttp'//项目名称与maven 下的package一致
-    publishVersion = '1.0.1'//版本号
+    publishVersion = '1.0.3'//版本号
     desc = '网络库基础组件日志fix'//描述
     website = ''//网站，可不填
 }
