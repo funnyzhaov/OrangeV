@@ -15,8 +15,6 @@ import com.zhidiantech.orangehttp.BuildConfig;
  * -----------------------------------------------------------------
  */
 public class HttpLogUtil {
-    //是否开启Log
-    public static boolean logEnable = BuildConfig.DEBUG;
 
     /**
      * 打印log设置级别
@@ -25,9 +23,6 @@ public class HttpLogUtil {
      * @param level
      */
     public static void showLog(String TAG, String msg, int level) {
-        if (!logEnable) {
-            return;
-        }
         switch (level) {
             case Log.DEBUG:
                 Log.d(TAG, msg);
@@ -55,9 +50,6 @@ public class HttpLogUtil {
      * @param msg
      */
     public static void showLog(String TAG, String msg) {
-        if (!logEnable) {
-            return;
-        }
         Log.d(TAG,msg);
 
     }
@@ -69,9 +61,6 @@ public class HttpLogUtil {
      * @param level
      */
     public static void showLogJson(String TAG, String msg,int level) {
-        if (!logEnable) {
-            return;
-        }
         String formatStr=formatJson(msg);
         showLog(TAG,formatStr,level);
     }
